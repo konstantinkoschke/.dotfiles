@@ -13,9 +13,6 @@
     ~/.config/termite:
         path: config/termite/
         create: true
-    ~/.config/networkmanager-dmenu:
-        path: config/networkmanager-dmenu
-        create: true
     ~/.config/wallpaper:
         path: config/wallpaper/
         create: true
