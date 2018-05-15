@@ -2,7 +2,7 @@ set $mod Mod4
 set $editor termite
 set $height 34
 
-font pango:FontAwesome 12
+#font pango:FontAwesome 12
 
 focus_follows_mouse no
 

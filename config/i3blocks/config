@@ -1,5 +1,5 @@
 separator=false
-separator_block_width=5
+separator_block_width=15
 
 [output1]
 command=/home/konstantin/scripts/monitor.sh
@@ -11,35 +11,35 @@ command=/home/konstantin/scripts/battery.sh
 interval=persist
 
 [disk]
-label=  ⛃
+label=⛃.
 command=/home/konstantin/scripts/disk
 interval=10
 
 [iface]
-label=    
+label= .
 command=/home/konstantin/scripts/iface
 interval=10
 
 [brightness]
-label=    
+label=.
 command=printf "%.0f " $(xbacklight -get)
 interval=30
 signal=2
 
 [volume]
-label=   
+label=. 
 command=/home/konstantin/scripts/volume
 interval=once
 signal=9
 
 [wireless]
-label=     
+label=.
 command=[[ -z "$(iwgetid -r)" ]] || echo "$(iwgetid -r) "
 interval=2
 
 
 [time]
-command=echo " `date +'  %a %d %b'` <b>`date +'  %H:%M'`</b> "; [[ -z "${BLOCK_BUTTON}" ]] || gsimplecal &
+command=echo "`date +'.  %a %d %b'` <b>`date +'.%H:%M'`</b> "; [[ -z "${BLOCK_BUTTON}" ]] || gsimplecal &
 interval=1
 markup=pango
 separator_block_width=0
