@@ -11,30 +11,30 @@ command=/home/konstantin/scripts/battery.sh
 interval=persist
 
 [disk]
-label=⛃.
+label=⛃
 command=/home/konstantin/scripts/disk
 interval=10
 
 [iface]
-label= .
+label=   
 command=/home/konstantin/scripts/iface
 interval=10
 
 [brightness]
-label=.
+label=
 command=printf "%.0f " $(xbacklight -get)
 interval=30
 signal=2
 
 [volume]
-label=. 
+label=
 command=/home/konstantin/scripts/volume
 interval=once
 signal=9
 
 [wireless]
-label=.
-command=[[ -z "$(iwgetid -r)" ]] || echo "$(iwgetid -r) "
+label=
+command=[[ -z "$(iw dev wlp3s0 link)" ]] || echo "$(iw dev wlp3s0 link | awk '/SSID/{print $2}') "
 interval=2
 
 
