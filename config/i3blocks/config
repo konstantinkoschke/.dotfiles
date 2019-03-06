@@ -39,7 +39,7 @@ interval=2
 
 
 [time]
-command=echo "`date +'.  %a %d %b'` <b>`date +'.%H:%M'`</b> "; [[ -z "${BLOCK_BUTTON}" ]] || gsimplecal &
+command=echo "`date +'  %a %d %b'` <b>`date +'%H:%M'`</b> "; [[ -z "${BLOCK_BUTTON}" ]] || gsimplecal &
 interval=1
 markup=pango
 separator_block_width=0
