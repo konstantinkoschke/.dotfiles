@@ -19,5 +19,9 @@ xset s noblank
 
 xset r rate 200 20
 
+export PATH="$PATH:/home/konstantin/opt/bin"
+
+eval $(ssh-agent)
 exec i3
+
 

@@ -17,9 +17,12 @@ bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
 #bindsym $mod+d exec dmenu_run
+#plain execution
 bindsym $mod+d exec --no-startup-id rofi -show run
+#use the following to access sh functions
+#bindsym $mod+d exec --no-startup-id rofi -run-list-command ". $(print -l ${(ok)functions})" -run-command "/bin/zsh -i -c '{cmd}'" -show run
 
-bindsym $mod+Shift+w exec --no-startup-id google-chrome-stable
+bindsym $mod+Shift+w exec --no-startup-id firefox
 bindsym $mod+Shift+m exec --no-startup-id thunderbird
 bindsym $mod+Shift+f exec --no-startup-id thunar
 
@@ -182,6 +185,8 @@ mode "$mode_brightness" {
     bindsym Escape mode "default"
 }
 
+#toggle screen
+bindsym $mod++m exec --no-startup-id BLOCK_BUTTON=dummy $HOME/scripts/monitor.sh
 
 # screenshot
 bindsym --release Print exec --no-startup-id "maim -p 0 -c 0.96,0.5,0.09 $HOME/Pictures/screenshot-$(date +%Y-%m-%d_%H-%M-%S).png"
@@ -201,7 +206,7 @@ bar {
 
 
 exec_always --no-startup-id feh --randomize --bg-fill ${HOME}/.config/wallpaper/*
-exec --no-startup-id compton -b
+#exec --no-startup-id picom -b
 exec --no-startup-id xmodmap ${USER}/.Xmodmap
 
 #exec --no-startup-id blueman-applet &

@@ -32,12 +32,14 @@
         path: oh-my-zsh
         create: true
     ~/.xinitrc: xinitrc
+    ~/.picom.conf: picom.conf
     ~/.Xresources: Xresources
     ~/.toprc: toprc
     ~/.i3blocks.conf: config/i3blocks/config
     ~/.i3status.conf: config/i3blocks/i3status.conf
-    ~/.compton.conf: compton.conf
     ~/.Xmodmap: Xmodmap
+    ~/.muttrc: muttrc
+    ~/.mailcap: mailcap
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]

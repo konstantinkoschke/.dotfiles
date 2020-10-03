@@ -52,7 +52,7 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git thefuck fasd)
+plugins=(git fasd kubectl kube-ps1 pyenv)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -96,5 +96,8 @@ export BROWSER=/usr/bin/xdg-open
 
 [[ -f ${HOME}/.Xmodmap ]] && xmodmap ~/.Xmodmap
 
+# kube-ps1
+POWERLEVEL9K_CUSTOM_KUBE_PS1='kube_ps1'
+
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status load time )
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir virtualenv vcs )
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir virtualenv vcs custom_kube_ps1)

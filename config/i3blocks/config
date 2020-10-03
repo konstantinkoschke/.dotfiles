@@ -15,6 +15,11 @@ label=⛃
 command=/home/konstantin/scripts/disk
 interval=10
 
+[ping]
+label=
+command=/home/konstantin/scripts/ping.sh
+interval=10
+
 [iface]
 label=   
 command=/home/konstantin/scripts/iface

@@ -13,7 +13,6 @@ i3status -c $HOME/.i3status.conf | while IFS= read -r line; do
     [[ "${PARTS[0]}" = "BAT" ]] && {
         STATE="${PARTS[2]}"
         [[ -n "${STATE}" ]] && {
-            STATE="${STATE:0:-3}"
             STATE=" (${STATE})"
         }
     }

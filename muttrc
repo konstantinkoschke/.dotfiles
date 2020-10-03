@@ -1,0 +1,27 @@
+# make sure exec bit is set
+source "$HOME/account.rc |"
+
+bind index G imap-fetch-mail
+
+set sort = threads
+
+set crypt_use_gpgme = yes
+set crypt_replysign = yes
+set crypt_replyencrypt = yes
+set crypt_replysignencrypted = yes
+set crypt_verify_sig = yes
+set crypt_autosign = yes
+
+set header_cache=$HOME/mutt_cache
+set edit_headers
+set editor = "vim -c 'set spell spelllang=de,en'"
+
+macro index,pager \cb "<pipe-message> urlscan<Enter>" "call urlscan to extract URLs out of a message"
+macro attach,compose \cb "<pipe-entry> urlscan<Enter>" "call urlscan to extract URLs out of a message"
+
+macro index,pager a "<save-message>=Archives<enter><enter-command>echo 'Saved to Archives'<enter>"
+
+set date_format="!%a, %b %d, %Y at %I:%M:%S%p %Z"
+set index_format="%4C %Z %D %-15.15L (%4l) %s"
+
+auto_view text/html

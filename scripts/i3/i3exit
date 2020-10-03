@@ -1,9 +1,9 @@
 #!/bin/bash
 
 lock() {
-    #  killall compton
+    #  killall picom
     $HOME/.config/i3lock/i3lock.sh
-    #  compton -b
+    # picom -b
 }
 
 case "$1" in
