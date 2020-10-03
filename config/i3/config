@@ -206,7 +206,6 @@ bar {
 
 
 exec_always --no-startup-id feh --randomize --bg-fill ${HOME}/.config/wallpaper/*
-#exec --no-startup-id picom -b
 exec --no-startup-id xmodmap ${USER}/.Xmodmap
 
 #exec --no-startup-id blueman-applet &

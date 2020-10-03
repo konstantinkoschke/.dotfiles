@@ -1,9 +1,7 @@
 #!/bin/bash
 
 lock() {
-    #  killall picom
     $HOME/.config/i3lock/i3lock.sh
-    # picom -b
 }
 
 case "$1" in

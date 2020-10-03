@@ -32,7 +32,6 @@
         path: oh-my-zsh
         create: true
     ~/.xinitrc: xinitrc
-    ~/.picom.conf: picom.conf
     ~/.Xresources: Xresources
     ~/.toprc: toprc
     ~/.i3blocks.conf: config/i3blocks/config
