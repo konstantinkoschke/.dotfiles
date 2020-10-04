@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
-xrandr -q | grep -wv eDP1 | grep connected | \
+[[ $(hostname) = konstantin-T460p ]] && identifier="eDP1"
+[[ $(hostname) = konstantin-T490 ]] && identifier="e-DP1"
+
+xrandr -q | grep -wv $identifier | grep connected | \
 while read line; do
     output=$(echo "$line" | awk -F' ' '{print $1}')
 
@@ -18,7 +21,7 @@ while read line; do
         else
             [[ -z "${BLOCK_BUTTON}" ]] || {
                 xrandr --auto
-                xrandr --output "${output}" --left-of eDP1
+                xrandr --output "${output}" --left-of $identifier
                 pkill -RTMIN+4 i3blocks
             }
 
