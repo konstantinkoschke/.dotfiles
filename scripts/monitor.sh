@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 [[ $(hostname) = konstantin-T460p ]] && identifier="eDP1"
-[[ $(hostname) = konstantin-T490 ]] && identifier="e-DP1"
+[[ $(hostname) = konstantin-T490 ]] && identifier="eDP-1"
 
 xrandr -q | grep -wv $identifier | grep connected | \
 while read line; do
