@@ -96,12 +96,10 @@ done
 
 export EDITOR=/usr/bin/vim
 
-export BROWSER=/usr/bin/xdg-open
-
 [[ -f ${HOME}/.Xmodmap ]] && xmodmap ~/.Xmodmap
 
 # kube-ps1
 POWERLEVEL9K_CUSTOM_KUBE_PS1='kube_ps1'
 
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status load time )
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir virtualenv vcs custom_kube_ps1)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir virtualenv pyenv vcs custom_kube_ps1)
