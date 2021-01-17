@@ -27,7 +27,7 @@ interval=10
 
 [brightness]
 label=
-command=printf "%.0f " $(xbacklight -get)
+command=echo $(printf "%.0f " $(brightnessctl -m  | awk -F, '{print substr($4, 0, length($4)-1)}'))
 interval=30
 signal=2
 
