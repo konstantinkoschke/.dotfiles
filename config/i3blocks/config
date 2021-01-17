@@ -39,7 +39,7 @@ signal=9
 
 [wireless]
 label=
-command=[[ -z "$(iw dev wlp3s0 link)" ]] || echo "$(iw dev wlp3s0 link | awk '/SSID/{print $2}') "
+command=[[ -z "$(iwctl station wlan0 show)" ]] || echo "$(iwctl station wlan0 show | awk '/Connected network/{print $3}') "
 interval=2
 
 
