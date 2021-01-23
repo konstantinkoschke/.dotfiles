@@ -8,5 +8,5 @@ maim ${tmpImageFile}
 mogrify -scale 2% -scale 5000% ${tmpImageFile}
 i3lock -i ${tmpImageFile}
 
-sleep 600
+sleep 5
 pgrep i3lock && xset dpms force off
