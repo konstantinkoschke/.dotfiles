@@ -211,4 +211,5 @@ exec --no-startup-id redshift-gtk &
 
 exec --no-startup-id dunst &
 exec --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Natural Scrolling Enabled" 1
+exec --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
 exec --no-startup-id xautolock -time 15 -locker "$HOME/.config/i3lock/i3lock.sh" -notify 100 -notifier "notify-send -u critical -t 5000 -- 'about to lock in 100s'"
