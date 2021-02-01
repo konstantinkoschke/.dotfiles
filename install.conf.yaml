@@ -43,6 +43,7 @@
     ~/.Xmodmap: Xmodmap
     ~/.muttrc: muttrc
     ~/.mailcap: mailcap
+    ~/.config/systemd/user/geoclue-agent.service: config/geoclue-agent.service
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
