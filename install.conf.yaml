@@ -26,17 +26,11 @@
     ~/.config/dunst:
         path: config/dunst/
         create: true
-    ~/.config/fontconfig:
-        path: config/fontconfig/
-        create: true
     ~/.sh.d:
         path: sh.d
         create: true
     ~/scripts:
         path: scripts
-        create: true
-    ~/.oh-my-zsh:
-        path: oh-my-zsh
         create: true
     ~/.xinitrc: xinitrc
     ~/.Xresources: Xresources
@@ -46,6 +40,7 @@
     ~/.Xmodmap: Xmodmap
     ~/.muttrc: muttrc
     ~/.mailcap: mailcap
+    ~/.config/starship.toml: config/starship.toml
     ~/.config/systemd/user/geoclue-agent.service: config/geoclue-agent.service
 
 - shell:

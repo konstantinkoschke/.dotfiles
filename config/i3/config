@@ -2,7 +2,7 @@ set $mod Mod4
 set $editor termite
 set $height 34
 
-font pango:FontAwesome 12
+font pango:Hack, FontAwesome, 12
 
 focus_follows_mouse no
 
@@ -199,7 +199,7 @@ bindsym $mod+Shift+s scratchpad show
 bar {
   status_command i3blocks
   position top
-  font pango:FontAwesome
+  font pango:Hack, FontAwesome 14
 }
 
 

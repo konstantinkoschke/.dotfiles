@@ -8,7 +8,7 @@ Xft.lcdfilter: lcddefault
 
 ! rofi
 rofi.modi: run
-rofi.font: FontAwesome 15
+rofi.font: Hack Nerd Font 15
 rofi.width: 100
 rofi.lines: 5
 rofi.columns: 1

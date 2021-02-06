@@ -1,5 +1,5 @@
 [global]
-    font = FontAwesome 12
+    font = Hack Nerd Font 12
     
     allow_markup = yes
     
