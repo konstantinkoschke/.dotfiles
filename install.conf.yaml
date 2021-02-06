@@ -4,6 +4,9 @@
 
 - clean: ['~']
 
+- create:
+    - ~/.config/systemd/user
+
 - link:
     ~/.zprofile: zprofile
     ~/.zshrc: zshrc
