@@ -1,4 +1,6 @@
 eval "$(starship init zsh)"
+eval "$(fasd --init auto)"
+
 export LANG=en_US.UTF-8
 
 for file in ${HOME}/.sh.d/*.sh
