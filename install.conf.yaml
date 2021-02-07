@@ -6,6 +6,7 @@
 
 - create:
     - ~/.config/systemd/user
+    - ~/.k9s
 
 - link:
     ~/.zprofile: zprofile
@@ -42,6 +43,7 @@
     ~/.mailcap: mailcap
     ~/.config/starship.toml: config/starship.toml
     ~/.config/systemd/user/geoclue-agent.service: config/geoclue-agent.service
+    ~/.k9s/skin.yml: config/k9s/solarized_dark.yml
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
