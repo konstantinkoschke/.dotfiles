@@ -1,3 +1,8 @@
+HISTFILE=~/.zsh_history
+HISTSIZE=SSAVEHIST=10000
+setopt EXTENDED_HISTORY
+setopt HIST_IGNORE_ALL_DUPS
+
 eval "$(starship init zsh)"
 eval "$(fasd --init auto)"
 
