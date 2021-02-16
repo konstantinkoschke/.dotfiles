@@ -6,7 +6,9 @@
 
 - create:
     - ~/.config/systemd/user
+    - ~/.config/bat
     - ~/.k9s
+    - ~/.vim/undo-dir
 
 - link:
     ~/.zprofile: zprofile
@@ -44,6 +46,7 @@
     ~/.config/starship.toml: config/starship.toml
     ~/.config/systemd/user/geoclue-agent.service: config/geoclue-agent.service
     ~/.k9s/skin.yml: config/k9s/solarized_dark.yml
+    ~/.config/bat/config: config/bat
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
