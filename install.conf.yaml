@@ -14,6 +14,7 @@
     ~/.zprofile: zprofile
     ~/.zshrc: zshrc
     ~/.vimrc: vimrc
+    ~/.vim-privaterc: vim-privaterc
     ~/.config/i3lock:
         path: config/i3lock/
         create: true
@@ -47,6 +48,8 @@
     ~/.config/systemd/user/geoclue-agent.service: config/geoclue-agent.service
     ~/.k9s/skin.yml: config/k9s/solarized_dark.yml
     ~/.config/bat/config: config/bat
+    ~/opt/bin/vimpriv: bin/vimpriv
+    ~/opt/bin/sops: bin/sops
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
